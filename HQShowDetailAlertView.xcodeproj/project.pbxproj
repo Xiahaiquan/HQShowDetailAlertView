@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5A5019182494A444001B65C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5019172494A444001B65C4 /* AppDelegate.swift */; };
-		5A50191A2494A444001B65C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5019192494A444001B65C4 /* SceneDelegate.swift */; };
 		5A50191C2494A444001B65C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50191B2494A444001B65C4 /* ViewController.swift */; };
 		5A50191F2494A444001B65C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A50191D2494A444001B65C4 /* Main.storyboard */; };
 		5A5019212494A447001B65C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5019202494A447001B65C4 /* Assets.xcassets */; };
 		5A5019242494A447001B65C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5019222494A447001B65C4 /* LaunchScreen.storyboard */; };
+		5A50192C2494A4E9001B65C4 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50192B2494A4E9001B65C4 /* CustomPresentationController.swift */; };
+		5A50192E2494A50C001B65C4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50192D2494A50C001B65C4 /* AlertViewController.swift */; };
+		5A5019302494A877001B65C4 /* DropDownAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50192F2494A877001B65C4 /* DropDownAnimatedTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A5019142494A444001B65C4 /* HQShowDetailAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQShowDetailAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5019172494A444001B65C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A5019192494A444001B65C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5A50191B2494A444001B65C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A50191E2494A444001B65C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A5019202494A447001B65C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A5019232494A447001B65C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A5019252494A447001B65C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A50192B2494A4E9001B65C4 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		5A50192D2494A50C001B65C4 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		5A50192F2494A877001B65C4 /* DropDownAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownAnimatedTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				5A5019172494A444001B65C4 /* AppDelegate.swift */,
-				5A5019192494A444001B65C4 /* SceneDelegate.swift */,
 				5A50191B2494A444001B65C4 /* ViewController.swift */,
+				5A50192B2494A4E9001B65C4 /* CustomPresentationController.swift */,
+				5A50192F2494A877001B65C4 /* DropDownAnimatedTransition.swift */,
+				5A50192D2494A50C001B65C4 /* AlertViewController.swift */,
 				5A50191D2494A444001B65C4 /* Main.storyboard */,
 				5A5019202494A447001B65C4 /* Assets.xcassets */,
 				5A5019222494A447001B65C4 /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A50191C2494A444001B65C4 /* ViewController.swift in Sources */,
+				5A5019302494A877001B65C4 /* DropDownAnimatedTransition.swift in Sources */,
 				5A5019182494A444001B65C4 /* AppDelegate.swift in Sources */,
-				5A50191A2494A444001B65C4 /* SceneDelegate.swift in Sources */,
+				5A50192C2494A4E9001B65C4 /* CustomPresentationController.swift in Sources */,
+				5A50192E2494A50C001B65C4 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +295,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8543SFY8AK;
 				INFOPLIST_FILE = HQShowDetailAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LS.HQShowDetailAlertView;
+				PRODUCT_BUNDLE_IDENTIFIER = LS.CollectionData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +314,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8543SFY8AK;
 				INFOPLIST_FILE = HQShowDetailAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LS.HQShowDetailAlertView;
+				PRODUCT_BUNDLE_IDENTIFIER = LS.CollectionData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
